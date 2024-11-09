@@ -1,0 +1,239 @@
+<html>
+ <head>
+  <style>
+   body {
+            background-color: #1A2B4C;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+        .card {
+            width: 150px;
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 2;
+        }
+        .card:hover img {
+            transform: scale(1.2);
+        }
+        .card:hover .description {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .card:not(:hover) {
+            transform: scale(0.9);
+        }
+        .description {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 160px;
+            transform: translatey(-50%);
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            width: 170px;
+            z-index: 3;
+        }
+        .description img {
+            width: 100px;
+            height: auto;
+            border-radius: 5%;
+            margin-bottom: 40px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card:nth-child(1) {
+            background: linear-gradient(180deg, #0000FF, #00008B);
+        }
+        .card:nth-child(2) {
+            background: linear-gradient(180deg, #FFD700, #FF69B4);
+        }
+        .card:nth-child(3) {
+            background: linear-gradient(180deg, #000000, #696969);
+        }
+        .card:nth-child(4) {
+            background: linear-gradient(180deg, #FF69B4, #8A2BE2);
+        }
+        .card:nth-child(5) {
+            background: linear-gradient(180deg, #0000FF, #8A2BE2);
+        }
+        .cloud {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .cloud img {
+            width: 50px;
+        }
+        .decorative-element {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 20px;
+            background-color: #00FFBF;
+        }
+        .decorative-element-right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 20px;
+            background-color: #00FFBF;
+        }
+        .decorative-circle {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #00FFBF;
+            border-radius: 50%;
+        }
+        .btn-kembali {
+            background-color: #007bff; /* Warna biru */
+            color: #fff; /* Warna teks putih */
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Animasi halus */
+            box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3); /* Bayangan */
+          }
+          
+          .btn-kembali:hover {
+            background-color: #0056b3; /* Warna biru yang lebih gelap saat di-hover */
+            transform: translateY(-2px); /* Efek naik sedikit */
+            box-shadow: 0px 6px 12px rgba(0, 86, 179, 0.4); /* Bayangan saat di-hover */
+          }
+          
+          .btn-kembali:active {
+            transform: translateY(1px); /* Efek tekan */
+            box-shadow: 0px 2px 4px rgba(0, 86, 179, 0.3); /* Bayangan saat ditekan */
+          }
+          
+        
+        
+  </style>
+ </head>
+ <body>
+  <div class="cloud">
+   <img alt="Cloud icon" height="50" src="https://storage.googleapis.com/a1aa/image/ZhXN5EW6fPzlSCfXFQWzbeHdVzUIgmQ8jo1oWpYVFRIers8OB.jpg" width="50"/>
+  </div>
+  <div class="container">
+   <div class="card">
+    <img alt="Profile image" height="80" src="https://storage.googleapis.com/a1aa/image/iqu28Ocw8kbpNdjswo21DvYN11lVGmnK1siBAmMOXEivyy7E.jpg" width="80"/>
+    <div>
+     ROLE:
+     <br/>
+     HERO:
+    </div>
+    <div class="description">
+     <img alt="Deskripsi gambar pertama" height="50" src="https://storage.googleapis.com/a1aa/image/Uc3DyMqiQ1JUKdCgv6xZ86cS1fBIeYfUrIwedhmHfUUbVa5dC.jpg" width="50"/>
+     Deskripsi untuk gambar pertama.
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Profile image" height="100" src="file:///C:/web%20mandiri/img/rem.png" width="80"/>
+    <div>
+     ROLE : EXP
+     <br/>
+     HERO : BARATS, BENEDETTA, YIN
+    </div>
+    <div class="description">
+     <img alt="Deskripsi gambar kedua" height="auto" src="file:///C:/web%20mandiri/img/DESK2.jpg" width="auto"/>
+     mau sejago apapun lu, kalo ketemu dark sistem ya auto lose, kan kocak.
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Profile image" height="80" src="https://storage.googleapis.com/a1aa/image/iqu28Ocw8kbpNdjswo21DvYN11lVGmnK1siBAmMOXEivyy7E.jpg" width="80"/>
+    <div>
+     ROLE:
+     <br/>
+     HERO:
+    </div>
+    <div class="description">
+     <img alt="Deskripsi gambar ketiga" height="50" src="https://storage.googleapis.com/a1aa/image/RQbK9tS7pvZWHVq3U5KOw0315IVo2O6lpV3KZCt5NfcVpl3JA.jpg" width="50"/>
+     Deskripsi untuk gambar ketiga.
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Profile image" height="80" src="https://storage.googleapis.com/a1aa/image/iqu28Ocw8kbpNdjswo21DvYN11lVGmnK1siBAmMOXEivyy7E.jpg" width="80"/>
+    <div>
+     ROLE:
+     <br/>
+     HERO:
+    </div>
+    <div class="description">
+     <img alt="Deskripsi gambar keempat" height="50" src="https://storage.googleapis.com/a1aa/image/d2glvTUysJJhGdOhn8Q2dBr9eknkaE5QgNaeTgUemzvclWeOB.jpg" width="50"/>
+     Deskripsi untuk gambar keempat.
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Profile image" height="80" src="https://storage.googleapis.com/a1aa/image/iqu28Ocw8kbpNdjswo21DvYN11lVGmnK1siBAmMOXEivyy7E.jpg" width="80"/>
+    <div>
+     ROLE:
+     <br/>
+     HERO:
+    </div>
+    <div class="description">
+     <img alt="Deskripsi gambar kelima" height="50" src="https://storage.googleapis.com/a1aa/image/5ZjH9MVaxkpPOlbzG2EsCCfe8EW7HF7igQINGTJ8oWntSLvTA.jpg" width="50"/>
+     Deskripsi untuk gambar kelima.
+    </div>
+   </div>
+  </div>
+  <div class="decorative-element">
+  </div>
+  <div class="decorative-element-right">
+  </div>
+  <div class="decorative-circle">
+  </div>
+  <button class="btn-kembali"
+  onclick="history.back()">balik</button>
+ </body>
+</html>

@@ -1,0 +1,151 @@
+/* Mengatur dasar halaman dengan background gambar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('file: ///C /web% 20mandiri /img/latar 2jpg;'); /* Ganti dengan path file JPEG Anda */
+    background-size: cover;
+    background-position: center;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    background-color: rgba(1, 5, 61, 0.9); /* Transparansi untuk background hitam */
+    border-radius: 15px;
+}
+
+/* Navigation Section */
+.navigation {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    background-color: #ffffff;
+    color: #1a1d49;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #00d5ab;
+    color: #1a1d49;
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-placeholder {
+    background-color: #00d5ab;
+    color: #1a1d49;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Description Section */
+.description-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.description-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #1a1d49;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Menambahkan gambar background */
+    background-image: url('img/latar2.jpg');
+    background-size: cover; /* Agar gambar memenuhi layar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Membuat background tetap saat scrolling */
+}
+
+.content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparansi untuk membuat teks terbaca */
+    padding: 20px;
+    margin: 50px;
+    border-radius: 8px;
+}
+
+
+.btn-kembali {
+    background-color: #007bff; /* Warna biru */
+    color: #fff; /* Warna teks putih */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.6s ease; /* Animasi halus */
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3); /* Bayangan */
+  }
+  
+  .btn-kembali:hover {
+    background-color: #0056b3; /* Warna biru yang lebih gelap saat di-hover */
+    transform: translateY(-2px); /* Efek naik sedikit */
+    box-shadow: 0px 6px 12px rgba(0, 86, 179, 0.4); /* Bayangan saat di-hover */
+  }
+  
+  .btn-kembali:active {
+    transform: translateY(1px); /* Efek tekan */
+    box-shadow: 0px 2px 4px rgba(0, 86, 179, 0.3); /* Bayangan saat ditekan */
+  }
